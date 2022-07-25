@@ -3,13 +3,23 @@
 /*******************************************/
 
 /* Box Model Hack */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+
 img{
   display: block;
   margin: 0 auto;
@@ -19,3 +29,58 @@ img{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+header {
+  background-color: rgb(228, 65, 6);
+  color: white;
+  height: 20vh;
+  font-size: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin: 5% 10%;
+}
+
+main h1, main h2 {
+  font-size: 2rem;
+}
+
+main input {
+  height: 4rem;
+  font-size: 2.25rem;
+  border: solid 1px rgb(228, 65, 6);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+button {
+  background-color: rgb(228, 65, 6);
+  color: white;
+  margin: 2rem 0;
+  height: 68px;
+  padding: 0 2.5rem;
+  border: none;
+  font-size: 42px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#name, #des {
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+iframe {
+  width: 100%;
+  height: 0;
+  padding-bottom: 2.5rem;
+}
+
